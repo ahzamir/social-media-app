@@ -10,6 +10,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.use("/", (req, res) => {
+    res.send("Welcome to the MERN Social API");
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 
