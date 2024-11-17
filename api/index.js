@@ -1,7 +1,6 @@
 import app from "../app";
 
-const handeler = async (req, res) => {
+// serverless is a utility that allows you to run Express.js apps on vercel
+export default async function (req, res) {
     await app(req, res);
 }
-
-export default handeler;
