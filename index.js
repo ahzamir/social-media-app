@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 // Connect to the database, then start the server
 connectDB().then(() => {
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    console.log("Connected to database");
 }).catch(error => {
     console.error("Failed to connect to database:", error);
 });
@@ -23,4 +23,4 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 
-export default app;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
