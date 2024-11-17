@@ -2,8 +2,7 @@
   "version": 2,
   "functions": {
     "api/index.js": {
-      "runtime": "nodejs16.x",
-      "maxDuration": 30
+      "runtime": "@vercel/node@v20.11.1"
     }
   },
   "routes": [
