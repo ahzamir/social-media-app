@@ -13,8 +13,4 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 
-app.get("/", (req, res) => {
-    res.send("Welcome to the MERN Social API");
-});
-
 export default app;
