@@ -1,3 +1,7 @@
 import app from "../app";
 
-export default app;
+const handeler = async (req, res) => {
+    await app(req, res);
+}
+
+export default handeler;
